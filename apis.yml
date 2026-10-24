@@ -1,23 +1,59 @@
 aid: open-ar-cloud-association
+
 name: Open AR Cloud Association
-description: 'Open AR Cloud Association is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Open AR Cloud Association is a non‑profit consortium driving open, interoperable spatial computing standards and services. Its mission is to connect the physical and digital worlds through open standards, open source implementations, and community collaboration, enabling decentralized AR experiences and data sharing across devices and platforms.'
+
 url: https://raw.githubusercontent.com/api-evangelist/open-ar-cloud-association/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- AR
+- Spatial Computing
+- Open Standards
+- Community
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/open-ar-cloud-association-hosts.yml
+- type: Vendors
+  url: vendors/open-ar-cloud-association-vendors.yml
+- type: DomainSecurity
+  url: security/open-ar-cloud-association-domain-security.yml
 - type: Website
-  url: https://www.openarcloud.org/
+  url: https://openarcloud.org/
+- type: Documentation
+  url: https://openarcloud.org/platform/
+- type: APIReference
+  url: https://openarcloud.org/platform/
+- type: GettingStarted
+  url: https://openarcloud.org/
+- type: GitHubOrganization
+  url: https://github.com/OpenArCloud
+
+apis: []
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
